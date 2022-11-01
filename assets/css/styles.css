@@ -1,0 +1,159 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: auto;
+    background-image: url('/image/background.jpeg');
+    /* background-color: dimgrey; */
+}
+.navbar{
+    background-color: green ;
+}
+
+.habit {
+    width: 100%;
+}
+
+
+.pop-up{
+    position: absolute;
+    top: 5px ;
+    right: 5px;
+}
+
+
+.habit-header input {
+    width        : 54%;
+    border       : none;
+    border-radius: 5px;
+    height       : 40px;
+    font-family  : 'Candal', sans-serif;
+}
+
+.habit-header .add-btn {
+    color           : white;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+    padding         : 8px 13px;
+    font-family     : 'Candal', sans-serif;
+    background-color: #e49b4e;
+}
+
+.habit-container ul {
+    list-style: none;
+    
+}
+
+.icons i{
+    color: red;
+}
+.habit-list-item {
+    padding       : 5px;
+    margin-top    : 5px;
+    border-bottom: 1px solid black;
+    font-family   : 'Candal', sans-serif;
+    display       : flex;
+    flex-direction: row;
+    flex-wrap     : wrap;
+    justify-content: space-around;
+}
+
+.habit-list-item form {
+    width  : 100%;
+    display: flex;
+}
+
+
+.habit-list-item .favorite {
+    color          : white;
+    text-decoration: none;
+    cursor         : pointer;
+    font-family    : 'Candal', sans-serif;
+    color          : gold;
+    margin-right   : 10px;
+    margin-top     : 2.5px;
+    font-size      : 18px;
+    width          : 10%;
+}
+
+
+
+.habit-list-item-name {
+    width: 70% !important;
+
+}
+
+.habit-list-item .status {
+    margin-top: 2.5px;
+}
+
+.habit-list-item .remove {
+    color          : #ac0600;
+    margin-right   : 5px;
+    cursor         : pointer;
+    text-decoration: none;
+    font-size      : 20px;
+    width: 10%;
+}
+
+
+
+
+
+.status .fa-check {
+    color: #5c0ded;
+}
+
+.status .fa-times {
+    color: #5c0ded;
+}
+
+.status .fa-minus {
+    color: #5c0ded;
+}
+
+.status2 .fa-check {
+    color    : #5c0ded;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.status2 .fa-times {
+    color    : #5c0ded;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.status2 .fa-minus {
+    color    : #5c0ded;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.dotw {
+    display         : inline-block;
+    margin-left     : 3%;
+    margin-right    : 3%;
+    margin-bottom   : 12px;
+    position        : relative;
+    width           : 60px;
+    height          : 60px;
+    border          : 1px solid black;
+    text-align      : center;
+    font-family     : Oswald, sans-serif;
+    font-size       : 10pt;
+    border-radius   : 3px;
+    overflow        : hidden;
+    user-select     : none;
+    background-color: #ede7f6;
+}
+
+.day {
+    width           : 100%;
+    
+    border-bottom: 1px solid black;
+}

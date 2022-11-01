@@ -1,0 +1,37 @@
+<!-- Register View -->
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body text-center">
+        <h1>Habit Tracker
+          <br />
+          <img src="/assets/image/daily-tasks.png" alt="Making Habits!" width="20%" />
+        </h1>
+        <h3 class="text-center mb-3">
+          <i class="fas fa-user-plus"></i> Register
+        </h3>
+        <%- include ("./partials/messages") %>
+          <form action="/users/sign-up" method="POST">
+            <div class="form-group">
+              <input type="name" id="name" required name="name" class="form-control" placeholder="Enter Name"
+                value="<%= typeof name != 'undefined' ? name : '' %>" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required class="form-control" placeholder="Enter Email"
+                value="<%= typeof email != 'undefined' ? email : '' %>" />
+            </div>
+            <div class="form-group">
+              <input type="password" id="name" required name="password" class="form-control" placeholder="Enter Password"
+                value="<%= typeof name != 'undefined' ? name : '' %>" />
+            </div>
+            <div class="form-group">
+              <input type="password" id="name" required name="confirm_password" class="form-control" placeholder="Confirm Password"
+                value="<%= typeof name != 'undefined' ? name : '' %>" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Register
+            </button>
+          </form>
+          <p class="lead mt-4">Already registered? <a href="/users/sign-in">Login</a></p>
+      </div>
+    </div>
+  </div>

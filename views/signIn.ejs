@@ -1,0 +1,26 @@
+<!-- Login View -->
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body text-center">
+        <h1>Health Tracker
+          <br />
+          <img src="/assets/image/daily-tasks.png" alt="Making Habits!" width="20%" />
+        </h1>
+        <div class="pop-up">
+          <%- include ("./partials/messages") %>
+        </div>      
+          <form action="/users/sign-in" method="POST">
+            <div class="form-group">
+              <input type="email" id="email" name="email" required class="form-control" placeholder="Enter Email" />
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" name="password" required class="form-control" placeholder="Enter Password" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+          <p class="lead mt-4">
+            New User? <a href="/users/sign-up">Register</a>
+          </p>
+      </div>
+    </div>
+  </div>
